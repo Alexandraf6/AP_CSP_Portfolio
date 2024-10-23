@@ -1,0 +1,5 @@
+# Alexandra - 2024-2025 Practice Set 4- Copression, Part 2
+### Byte pair encoding is a data compression technique.  The encoding algorithm looks for pairs of characters that appear in a string more than once and replaces each instance of that pair with a character that does not appear in the string.  The algorithm saves a list containing the mapping of character pairs to their corresponding replacement characters.  For example, the string, "HOW_MUCH_WOOD_COULD_A_WOODCHUCK_CHUCK_IF_A_WOODCHUCK_COULD_CHUCK_WOOD" could be encoded as "HOW_MUCH_@_COULD_A_@$_$_IF_A_@$_COULD_$_@" by replacing all the instances of "WOOD" with "@" and all the instances of "CHUCK" with "$".  Which of the following strings cannot be shortened using byte pair encoding?
+
+Select Two Responses.
+When I answered this I originally chose the answers B) BEEP_BEEP and D)WOOOO_HOOOO!. Now that I'm reviewing it I'm pretty sure I misread the question thinking it was asking what 2 byte pair encoding can be shortened next time I will make sure to read the question properly.
