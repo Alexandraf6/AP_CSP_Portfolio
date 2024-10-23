@@ -1,0 +1,3 @@
+# Alexandra- 2024 - 2025 Practice Set 7 - Decentralization, DNS, IP Addresses, and Bandwidth
+### Which of the following are true statements about bandwidth? Select two answers.
+When I answer this question I responded with B) Higher badwidth generally resuls in faster connections speeds and C) Bandwidth is measured in bits per second(bps) , I got this wrong because the bandwidth refers to the amount of data that can be sent over a connection, this says that the actual answer to this question was A) Bandwidth refers to the amount of data that can be transferred over a network in a given amount of time.  
