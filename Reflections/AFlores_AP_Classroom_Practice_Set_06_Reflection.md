@@ -1,0 +1,3 @@
+# Alexandra- 2024-2025 Practice Set 6- Introduction to the Internet
+### Which of the following best describes the relationship between the World Wide Web and the Internet?
+When I answered this question I responded with B) The World Wide Web is a system of linked pages, programs, and files that is accessed using a data stream called the Internet. The internet however isnt a data stream its a network of devices with the world wide web being the content. The coorect answer was C) The world Wide Web is a system of linked pages, programs, and files that is accessed via a network called the internet. 
