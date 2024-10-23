@@ -7,4 +7,4 @@ ll) The author wants to prevent people from sharing copies of the e-book on peer
 
 lll) The author wants to allow people permission to use and modify the e-book.
 
-When originally answering this question I answered a)l only (The author wants to make the e-book available as a free download.) however with creative commons the public has access and the author is able to conrtol if the public can modify their work.
+When originally answering this question I answered l only (The author wants to make the e-book available as a free download.) However with creative commons the public has access and the author is able to conrtol if the public can modify their work so the correct answer was l)The author wants to make the e-book avilable as a free download and lll)The author wants to allow people permisiion to use and modify the e-book.
