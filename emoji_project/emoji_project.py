@@ -1,7 +1,6 @@
 # Import the CMU Graphics Package:
 from cmu_graphics import *
 
-
 #Ears
 Circle(100,100,75,fill='cornSilk')
 Circle(300,100,75,fill='cornSilk')
