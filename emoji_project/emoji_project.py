@@ -6,17 +6,18 @@ Circle(100,100,75,fill='cornSilk')
 Circle(300,100,75,fill='cornSilk')
 
 #inner ears
-Oval(200,200,200,200)
+Oval(290,115,170,130,rotateAngle=130, fill=gradient(rgb(242, 235, 220),rgb(235, 226, 206)))
+Oval(110,115,170,130,rotateAngle=50,fill=gradient(rgb(242, 235, 220),rgb(235, 226, 206)))
 
 #Head
 Circle(200,200,150, fill='cornSilk')
 
-#inner ears
-Oval(250,150,180,150,rotateAngle=150)
+
 
 #nose
 
 #eyes
+Rect(100,100,10,10)
 
 #hairs
 
