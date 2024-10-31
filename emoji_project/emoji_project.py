@@ -22,17 +22,20 @@ Oval(110,115,170,130,rotateAngle=50,fill=gradient(rgb(232, 211, 231),rgb(242, 23
 Circle(200,200,150, fill='cornSilk')
 
 
-
-#nose
-
 #eyes
-Rect(100,175,65,20, fill=gradient('black','black','gray', start='top'))
+Rect(102,175,65,20, fill='grey')
+Rect(238,175,65,20, fill='grey')
 
 #hairs
 
 #snout
+Oval(200,250,110,90, fill=rgb(235, 226, 206))
+
+#nose
+Star(200,250,30,3,roundness=100)
 
 #mouth
+Label(),100,100,size='10'
 
 #stars
 
@@ -40,4 +43,3 @@ Rect(100,175,65,20, fill=gradient('black','black','gray', start='top'))
 
 # Run program:
 cmu_graphics.run()
-
