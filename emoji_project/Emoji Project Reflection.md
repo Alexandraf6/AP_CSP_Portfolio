@@ -1,3 +1,4 @@
+# Alexandra Flores - Project: Emoji Project Reflection
 In this project we were required to make an emoji that represent us. The emoji I made was moslty based on one of my keychains, 
 in addition it's in one of my favorite colors. This project helped me improve my coding skills and showed me a bit more of what 
 can be accomplished with code. Some skills that I was able to gain while doing this project were patience and problem solving. 
