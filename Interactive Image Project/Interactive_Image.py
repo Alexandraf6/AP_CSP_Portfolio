@@ -36,18 +36,19 @@ def onMouseMove(mouseX,mouseY):
         HIT3=Star(150,75,15,5,fill='lemonChiffon', opacity=7)        
         HIT4=Star(225,100,15,5,fill='lemonChiffon',opacity=7)
         HIT5=Star(250,175,15,5,fill='lemonChiffon',opacity=7)
-
-
         Crown=Label('GET CROWN',150,325,size=15,font='monospace',opacity=7)
         clicker=Circle(200,325,5,opacity=7)
-
-
         
+def onMouseRelease(mouseX, mouseY):
+    if clicker.hits(mouseX,mouseY):
+        C1.visible=False
+        C2.visible=False
+        C3.visible=False
+        C4.visible=False
+        C5.visible=False
+        C6.visible=False
+        C7.visible=False
         
-        
-
-      
-
 #Sword
 Sword = Circle(325,300,45,border='black',borderWidth=2,opacity=7)
 Line(350,275,325,300, lineWidth=5)
@@ -89,13 +90,13 @@ Oval(175,275,25,40,fill='wheat')
 Oval(125,275,25,40,fill='wheat')
 
 #Crown
-Rect(150,150,40,10, rotateAngle=25,fill=rgb(217, 174, 48))
-Polygon(153,143,165,135,165,149,fill=rgb(217, 174, 48))
-Polygon(165,149,177,141,177,155,fill=rgb(217, 174, 48))
-Polygon(177,155,189,147,189,167,fill=rgb(217, 174, 48))
-Circle(165,135,3,fill='lavender')
-Circle(177,141,3,fill='lavender')
-Circle(189,147,3,fill='lavender')
+C1=Rect(150,150,40,10, rotateAngle=25,fill=rgb(217, 174, 48),visible=True)
+C2=Polygon(153,143,165,135,165,149,fill=rgb(217, 174, 48),visible=True)
+C3=Polygon(165,149,177,141,177,155,fill=rgb(217, 174, 48),visible=True)
+C4=Polygon(177,155,189,147,189,167,fill=rgb(217, 174, 48),visible=True)
+C5=Circle(165,135,3,fill='lavender',visible=True)
+C6=Circle(177,141,3,fill='lavender',visible=True)
+C7=Circle(189,147,3,fill='lavender',visible=True)
 
 
 
