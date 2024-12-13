@@ -19,6 +19,8 @@ Label('DAY',275,15, italic=True)
 Night= Rect(325,4,50,25,border='black',borderWidth=2,opacity=7)
 Label('NIGHT',350,15,italic=True)
 
+
+
 def onMousePress(mouseX, mouseY):
     if Night.hits(mouseX, mouseY):
         sky.fill=rgb(105, 105, 138)
@@ -29,14 +31,23 @@ def onMousePress(mouseX, mouseY):
 
 def onMouseMove(mouseX,mouseY):
     if Sword.hits(mouseX, mouseY):
-        HIT1.visible=True
-        HIT2.visible=True
-        HIT3.visible=True
-        HIT4.visible=True
-        HIT5.visible=True
-        Label('GET CROWN',150,325,size=15,font='monospace',)
+        HIT1=Star(50,175,15,5,fill='lemonChiffon', opacity=7)
+        HIT2=Star(75,100,15,5,fill='lemonChiffon', opacity=7)
+        HIT3=Star(150,75,15,5,fill='lemonChiffon', opacity=7)        
+        HIT4=Star(225,100,15,5,fill='lemonChiffon',opacity=7)
+        HIT5=Star(250,175,15,5,fill='lemonChiffon',opacity=7)
 
-def onMouseRelease        
+
+        Crown=Label('GET CROWN',150,325,size=15,font='monospace',opacity=7)
+        clicker=Circle(200,325,5,opacity=7)
+
+
+        
+        
+        
+
+      
+
 #Sword
 Sword = Circle(325,300,45,border='black',borderWidth=2,opacity=7)
 Line(350,275,325,300, lineWidth=5)
@@ -87,16 +98,9 @@ Circle(177,141,3,fill='lavender')
 Circle(189,147,3,fill='lavender')
 
 
-#Win Stars
-HIT1=Star(50,175,15,5,fill='lemonChiffon', visible=False)
-HIT2=Star(75,100,15,5,fill='lemonChiffon', visible=False)
-HIT3=Star(150,75,15,5,fill='lemonChiffon', visible=False)        
-HIT4=Star(225,100,15,5,fill='lemonChiffon', visible=False)
-HIT5=Star(250,175,15,5,fill='lemonChiffon', visible=False)
-
-    
 
 
 # Run program:
 cmu_graphics.run()
+
 
