@@ -13,5 +13,26 @@ Rect(50,50,300,300,fill='tan')
 Rect(75,75,250,250,fill='snow')
 
 
+
+Rect(0,0,400,400,fill='aliceBlue')
+
+#Art gallery
+#pillars
+Rect(110,170,20,150,fill='red')
+Rect(150,170,20,150,fill='red')
+Rect(130,170,20,150,fill='red')
+#Rect(140,170,20,150,fill='red')
+
+
+
+#top
+Rect(100,150,200,20)
+Rect(90,140,220,10,fill='blue')
+Rect(90,160,220,10,fill='blue')
+
+
+
+
+
 # Run program:
 cmu_graphics.run()
