@@ -8,31 +8,42 @@ Line(200,25,150,400,lineWidth=20,fill=rgb(189, 163, 128))
 Rect(180,20,40,10,fill=rgb(189, 163, 128))
 Rect(50,50,300,300,fill='tan')
 
-
 #paper
 Rect(75,75,250,250,fill='snow')
 
+# Startung screen
 
+background = Rect(0,0,400,400,fill='aliceBlue')
+button = Group(
+        Rect(150,350,100,20, opacity=25),
+        Label('PAINT',200,360,size=20)
+        )
 
-Rect(0,0,400,400,fill='aliceBlue')
+g = Group(
+    Rect(10,150,380,190,fill='wheat'),
+    Rect(50,130,50,210,fill='tan'),
+    Rect(300,130,50,210,fill='tan'),
+    Rect(5,150,45,10,fill='blanchedAlmond'),
+    Rect(350,150,45,10,fill='blanchedAlmond'),
+    Rect(110,170,20,150,fill='cornSilk'),
+    Rect(150,170,20,150,fill='cornSilk'),
+    Rect(230,170,20,150,fill='cornSilk'),
+    Rect(270,170,20,150,fill='cornSilk'),
+    Rect(100,150,200,20,fill='cornSilk'),
+    Rect(90,140,220,10,fill='blanchedAlmond'),
+    Rect(90,160,220,10,fill='blanchedAlmond'),
+    Rect(90,320,220,20,fill='blanchedAlmond'),
+    Label('The Art Gallery',200,50,size=40, font='Yu Gothic', fill='black', opacity=100),
 
-#Art gallery
-#pillars
-Rect(110,170,20,150,fill='red')
-Rect(150,170,20,150,fill='red')
-Rect(130,170,20,150,fill='red')
-#Rect(140,170,20,150,fill='red')
+   
+    )
 
+def onMousePress(mouseX, mouseY):
+    if button.hits(mouseX,mouseY):
+        g.visible=False
+        button.visible=False
+        background.visible=False
 
-
-#top
-Rect(100,150,200,20)
-Rect(90,140,220,10,fill='blue')
-Rect(90,160,220,10,fill='blue')
-
-
-
-
-
-# Run program:
+#Run_program:
 cmu_graphics.run()
+
