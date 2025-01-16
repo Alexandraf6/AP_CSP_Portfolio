@@ -1,53 +1,67 @@
 # Import the CMU Graphics Package:
 from cmu_graphics import *
 
-#Canvas
-
-Line(220,25,250,400,lineWidth=20,fill=rgb(189, 163, 128))
-Line(220,25,150,400,lineWidth=20,fill=rgb(189, 163, 128))
-Rect(200,20,40,10,fill=rgb(189, 163, 128))
-Rect(70,50,300,300,fill='tan')
-
-#Tool Bar
-Rect(10,20,40,360)
-
-
-
-#paper
-Rect(95,75,250,250,fill='snow')
-
-# Starting screen
-background = Rect(0,0,400,400,fill='aliceBlue')
-
-button = Group(
-        Rect(150,350,100,20, opacity=25),
-        Label('PAINT',200,360,size=20)
-        )
-
-g = Group(
-    Rect(10,150,380,190,fill='wheat'),
-    Rect(50,130,50,210,fill='tan'),
-    Rect(300,130,50,210,fill='tan'),
-    Rect(5,150,45,10,fill='blanchedAlmond'),
-    Rect(350,150,45,10,fill='blanchedAlmond'),
-    Rect(110,170,20,150,fill='cornSilk'),
-    Rect(150,170,20,150,fill='cornSilk'),
-    Rect(230,170,20,150,fill='cornSilk'),
-    Rect(270,170,20,150,fill='cornSilk'),
-    Rect(100,150,200,20,fill='cornSilk'),
-    Rect(90,140,220,10,fill='blanchedAlmond'),
-    Rect(90,160,220,10,fill='blanchedAlmond'),
-    Rect(90,320,220,20,fill='blanchedAlmond'),
-    Label('The Art Gallery',200,50,size=40, font='Yu Gothic', fill='black', opacity=100),
-    )
+# Toolbar
+Rect(10,20,40,360,fill='Grey',opacity=30)
+Flat = Rect(15,25,30,20)
+Round = Rect(15,50,30,20)
+Red = Rect(15,75,30,20,fill='lightCoral')
+Orange = Rect(15,100,30,20,fill='lightSalmon')
+Yellow = Rect(15,125,30,20,fill='paleGoldenrod')
+Green = Rect(15,150,30,20,fill='darkSeaGreen')
+Blue = Rect(15,175,30,20,fill='lightBlue')
+Purple = Rect(15,200,30,20,fill='thistle')
+Black = Rect(15,225,30,20,fill='black')
+White = Rect(15,250,30,20,fill='whiteSmoke')
 
 
+
+# Canvas
+Canvas = Group(Line(220, 25, 250, 400, lineWidth=20, fill=rgb(189, 163, 128), visible=False),
+               Line(220, 25, 150, 400, lineWidth=20, fill=rgb(189, 163, 128), visible=False),
+               Rect(200, 20, 40, 10, fill=rgb(189, 163, 128), visible=False),
+               Rect(70, 50, 300, 300, fill='tan', visible=False)
+               )
+
+# Paper
+Paper = Rect(95, 75, 250, 250, fill='snow', visible=False)
+
+# Starting Screen
+background = Rect(0, 0, 400, 400, fill='aliceBlue')
+
+button = Group(Rect(150,350,100,20, opacity=25),
+               Label('PAINT',200,360,size=20)
+               )
+
+# Gallery:
+Gallery = Group(Rect(10, 150, 380, 190, fill='wheat'),
+                Rect(50, 130, 50, 210, fill='tan'),
+                Rect(300, 130, 50, 210, fill='tan'),
+                Rect(5, 150, 45, 10, fill='blanchedAlmond'),
+                Rect(350, 150, 45, 10, fill='blanchedAlmond'),
+                Rect(110, 170, 20, 150, fill='cornSilk'),
+                Rect(150, 170, 20, 150, fill='cornSilk'),
+                Rect(230, 170, 20, 150, fill='cornSilk'),
+                Rect(270, 170, 20, 150,fill='cornSilk'),
+                Rect(100, 150, 200, 20, fill='cornSilk'),
+                Rect(90, 140, 220, 10, fill='blanchedAlmond'),
+                Rect(90, 160, 220, 10, fill='blanchedAlmond'),
+                Rect(90, 320, 220, 20, fill='blanchedAlmond'),
+                Label('The Art Gallery', 200, 50, size=40, font='Yu Gothic', fill='black', opacity=100)
+                )
+
+# Mouse Events:
 def onMousePress(mouseX, mouseY):
-    if button.hits(mouseX,mouseY):
-        g.visible=False
-        button.visible=False
-        background.visible=False
-        
+    if button.hits(mouseX, mouseY):
+        Gallery.visible = False
+        button.visible = False
+        background.visible = False
+        Paper.visible = True
+        Canvas.visivle = True
 
-#Run_program:
+def onMouseDrag(mouseX, mouseY):
+    if Paper.hits(mouseX, mouseY):
+        Rect(mouseX, mouseY, 10, 10)
+
+# Run Program:
 cmu_graphics.run()
